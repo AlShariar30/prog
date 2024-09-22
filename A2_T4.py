@@ -1,26 +1,16 @@
-def main():
-    print("Program starting.")
-    
-  
-    num_tasks = 7
-    total_minutes = 0
-    
-    print("Estimate how many minutes you spent on programming...")
-    
-    
-    for i in range(1, num_tasks + 1):
-        minutes = int(input(f"A1_T{i}: "))
-        total_minutes += minutes
-    
-   
-    average_minutes = total_minutes / num_tasks
-    rounded_average = round(average_minutes)
-    
-    
-    print(f"\nIn total you spent {total_minutes} minutes on programming.")
-    print(f"Average per task was {average_minutes:.2f} min and same rounded to the nearest integer {rounded_average} min.")
-    
-    print("Program ending.")
-
-if __name__ == "__main__":
-    main()
+print('Program starting.\nEstimate how many minutes you spent on programming...\n')
+T1=float(input('A1_T1: '))
+T2=float(input('A1_T2: '))
+T3=float(input('A1_T3: '))
+T4=float(input('A1_T4: '))
+T5=float(input('A1_T5: '))
+T6=float(input('A1_T6: '))
+T7=float(input('A1_T7: '))
+Lis1=[T1,T2,T3,T4,T5,T6,T7]
+print(f'\nIn total you spent {int(round(sum(Lis1)))} minutes on programming.')
+Avg=sum(Lis1)/len(Lis1)
+if Avg % 1 ==0:
+    print(f'Average per task was {sum(Lis1)/len(Lis1):.1f} min and same rounded to the nearest integer {int(round(sum(Lis1)/len(Lis1)))} min.\n')
+else:
+    print(f'Average per task was {sum(Lis1)/len(Lis1):.2f} min and same rounded to the nearest integer {int(round(sum(Lis1)/len(Lis1)))} min.\n')
+print('Program ending.')

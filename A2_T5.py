@@ -1,17 +1,11 @@
-print("Program starting.")
-
-word = input("\nInsert a closed compound word: ")
-
-print(f"\nThe word you inserted is '{word}' and in reverse it is '{word[::-1]}'.")
-print(f"The inserted word length is {len(word)}")
-print(f"Last character is '{word[-1]}'")
-
-print("\nTake substring from the inserted word by inserting...")
-start_index = int(input("1) Starting point: "))
-end_index = int(input("2) Ending point: "))
-step_size = int(input("3) Step size: "))
-
-substring = word[start_index:end_index:step_size]
-print(f"\nThe word '{word}' sliced to the defined substring is '{substring}'.")
-
-print("Program ending.")
+print('Program starting.\n')
+Wo1=input('Insert a closed compound word: ')
+print("The word you inserted is ",Wo1,sep="'",end="'")
+print(" and in reverse it is ",Wo1[::-1],sep="'",end="'.")
+print(f'\nThe inserted word length is {len(Wo1)}')
+print(f'Last character is ',Wo1[-1:],sep="'",end="'\n")
+print('\nTake substring from the inserted word by inserting...')
+Num1=int(input('1) Starting point: '))
+Num2=int(input('2) Ending point: '))
+Num3=int(input('3) Step size: '))
+print(f'\nThe word \'{Wo1}\' sliced to the defined substring is \'{Wo1[Num1:Num2:Num3]}\'.\nProgram ending.')
